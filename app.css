@@ -1,0 +1,105 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+}
+body{
+    text-align: center;
+    background-color: hsl(214, 47%, 23%); 
+    /* background-color:hsl(237, 49%, 15%);  add on when we click to see rules */
+}
+.main-box{
+    width: 50%;
+    margin:30px auto 0px;;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 10px;
+}
+.score-box{
+    display: inline-block;
+    background-color:white;
+    padding: 0px 30px;
+    position: relative;
+    bottom: 7px;
+border-radius: 10px;;
+}
+.logo-image{
+    margin-right: 430px;
+    margin-top: 4px;
+    position: relative;
+    top: 10px;
+}
+.score-heading{
+    color: hsl(229, 64%, 46%);
+    margin-bottom:0px;
+
+}
+#score-no{
+    font-size: 3rem;
+    font-weight:5;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.choice{
+    margin-top: 150px;
+}
+
+.scissor , .rock, .paper{
+    background-color:white;
+    display: inline-block;
+    width: 5%;
+    padding: 20px 20px;
+    position :relative;
+    border-radius: 100%;
+   
+}
+.scissor{
+bottom:360px;
+right: 20px;;
+border:20px solid hsl(39, 89%, 49%); 
+}
+.rock{
+bottom:140px;
+border:20px solid  hsl(230, 89%, 62%) ; 
+}
+.paper{
+    bottom:360px;
+    left: 20px;;
+    border:20px solid hsl(349, 71%, 52%); 
+
+}
+.rules{
+    border: 2px solid hsl(217, 16%, 45%) ;
+    width: 10%;
+    margin-left: 1300px;
+    position: relative;
+    bottom: 180px;
+    color: white;
+}
+.rules-heading{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.rules-hide{
+    width: 25%;
+    padding-top: 10px;
+    background-color: white;
+    position :absolute;
+    top: 200px;
+    left: 575px;
+    z-index:3;
+    border-radius: 10px;;
+    display:none;
+}
+.rules-hide.visible{
+    display:block;
+}
+
+
+.close-image{
+    position: relative;
+    left: 313px;
+    bottom: 309px;
+}
