@@ -8,7 +8,10 @@
 body{
     text-align: center;
     background-color: hsl(214, 47%, 23%); 
-    /* background-color:hsl(237, 49%, 15%);  add on when we click to see rules */
+}
+.manage-background{
+    background-color:hsl(237, 49%, 15%); /* add on when we click to see rules */
+
 }
 .main-box{
     width: 50%;
@@ -42,10 +45,10 @@ border-radius: 10px;;
     margin-bottom: 10px;
 }
 .choice{
-    margin-top: 150px;
+    margin-top: 150px;  
 }
 
-.scissor , .rock, .paper{
+.scissor , .rock, .paper,.pseudo{
     background-color:white;
     display: inline-block;
     width: 5%;
@@ -61,12 +64,13 @@ border:20px solid hsl(39, 89%, 49%);
 }
 .rock{
 bottom:140px;
-border:20px solid  hsl(230, 89%, 62%) ; 
+border:20px solid hsl(349, 71%, 52%); 
+
 }
 .paper{
     bottom:360px;
     left: 20px;;
-    border:20px solid hsl(349, 71%, 52%); 
+    border:20px solid  hsl(230, 89%, 62%) ; 
 
 }
 .rules{
@@ -76,6 +80,7 @@ border:20px solid  hsl(230, 89%, 62%) ;
     position: relative;
     bottom: 180px;
     color: white;
+    cursor: pointer;
 }
 .rules-heading{
     margin-top: 10px;
@@ -89,7 +94,7 @@ border:20px solid  hsl(230, 89%, 62%) ;
     position :absolute;
     top: 200px;
     left: 575px;
-    z-index:3;
+    z-index:10;
     border-radius: 10px;;
     display:none;
 }
@@ -102,4 +107,41 @@ border:20px solid  hsl(230, 89%, 62%) ;
     position: relative;
     left: 313px;
     bottom: 309px;
+    cursor: pointer;
 }
+
+/* step2 -section properties */
+.step-2{
+    margin-top: 130px;
+    display: none;
+}
+.step-2.visible{
+    display: block;
+}
+.head-1{
+color: white;
+margin-right:130px;
+}
+.head-2{
+color:white;
+margin-left:130px;
+}
+.position-1{
+    position :relative;
+    top:30px;
+    margin-right:130px;
+}
+.position-2{
+    position :relative;
+    top:30px;
+    margin-left:130px;
+
+}
+.pseudo{
+    border:20px solid hsl(237, 49%, 15%) ;
+    background-color:hsl(237, 49%, 15%) ;
+    height: 51px;
+    top: 0px;    
+    z-index:5;
+}
+
