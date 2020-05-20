@@ -42,7 +42,7 @@ margin-right: 8px;
     margin-bottom:0px;
 
 }
-#score-no{
+#score-no,#house-no{
     font-size: 3rem;
     font-weight:5;
     margin-top: 0px;
@@ -50,6 +50,9 @@ margin-right: 8px;
 }
 .choice{
     margin-top: 150px;  
+}
+.choice.hide{
+    display: none;
 }
 
 .scissor , .rock, .paper,.pseudo{
@@ -81,8 +84,9 @@ border:20px solid hsl(349, 71%, 52%);
     border: 2px solid hsl(217, 16%, 45%) ;
     width: 10%;
     margin-left: 1300px;
-    position: relative;
-    bottom: 180px;
+    position: absolute;
+    right:50px;
+    bottom:110px;
     color: white;
     cursor: pointer;
 }
@@ -124,7 +128,7 @@ border:20px solid hsl(349, 71%, 52%);
 }
 .head-1{
 color: white;
-margin-right:130px;
+margin-right:230px;
 }
 .head-2{
 color:white;
@@ -133,13 +137,13 @@ margin-left:130px;
 .position-1{
     position :relative;
     top:30px;
-    margin-right:130px;
+    margin-right:240px;
 }
 .position-2{
     position :relative;
     top:30px;
     margin-left:130px;
-
+    
 }
 .pseudo{
     border:20px solid hsl(237, 49%, 15%) ;
@@ -148,4 +152,27 @@ margin-left:130px;
     top: 0px;    
     z-index:5;
 }
+.result-box{
+color: white;
 
+position: relative;
+    bottom: 140px;
+    display: none;
+}
+.result-box.visible{
+    display: inline-block;
+}
+.result{
+font-size: 4rem;
+font-weight: 700;
+margin-bottom: 20px;
+}
+
+.next-turn{
+    background-color: white;
+    color: blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 70px;
+    padding-left: 70px;
+}
