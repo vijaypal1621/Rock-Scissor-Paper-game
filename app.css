@@ -26,9 +26,13 @@ body{
     position: relative;
     bottom: 7px;
 border-radius: 10px;;
+margin-right: 8px;
+}
+.house{
+    background-color: tomato;
 }
 .logo-image{
-    margin-right: 430px;
+    margin-right: 256px;
     margin-top: 4px;
     position: relative;
     top: 10px;
