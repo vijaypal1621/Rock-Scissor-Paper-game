@@ -3,9 +3,9 @@ const ruleSection= document.querySelector(".rules-hide");
 const cross=document.querySelector(".close-image")
 const choice=document.querySelector(".choice");
 const step2=document.querySelector(".step-2");
-const position2=document.querySelector(".position-2");
+const position2=step2.querySelector(".position-2");
 const result=document.querySelector(".result-box");
-
+const image1=step2.querySelector(".position-1");
 // object for mapping
 const map={
 paper:1,
@@ -115,11 +115,13 @@ function getScore(userChoosed){
 
 const choiceHandler=function (event) {
 const selectedDiv=event.target.closest('div');
+console.log(selectedDiv);
 choice.classList.add("hide");
 step2.classList.add("visible");
 const selectedDivClass=selectedDiv.getAttribute("class");
+console.log(selectedDivClass);
 const selectedDivClassImageURL=selectedDiv.querySelector('img').getAttribute("src");
-const image1=step2.querySelector(".position-1");
+
 image1.classList.add(selectedDivClass);
 const image1URL=image1.querySelector("img");
 image1URL.setAttribute("src",selectedDivClassImageURL );
@@ -171,9 +173,16 @@ choice.addEventListener('click',choiceHandler);
 const next=document.querySelector(".next-turn");
 next.addEventListener("click",()=>{
             // count++;
+    
+        const selectedDivClass=step2.querySelector(".position-1");
+        selectedDivClass.className="position-1";
+        console.log(selectedDivClass);
+        const selectedDivClass2=step2.querySelector(".position-2");
+        selectedDivClass2.className="position-2";
             step2.classList.remove("visible");
             choice.classList.remove("hide");
             result.classList.remove("visible");
+
 
             });
            

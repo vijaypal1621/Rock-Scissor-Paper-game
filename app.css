@@ -62,8 +62,10 @@ margin-right: 8px;
     padding: 20px 20px;
     position :relative;
     border-radius: 100%;
+    cursor: pointer;
    
 }
+
 .scissor{
 bottom:360px;
 right: 20px;;
@@ -88,7 +90,7 @@ border:20px solid hsl(349, 71%, 52%);
     right:50px;
     bottom:110px;
     color: white;
-    cursor: pointer;
+    cursor: help;
 }
 .rules-heading{
     margin-top: 10px;
@@ -175,4 +177,6 @@ margin-bottom: 20px;
     padding-bottom: 10px;
     padding-right: 70px;
     padding-left: 70px;
+    border-radius: 10px;
+    cursor:pointer;
 }
