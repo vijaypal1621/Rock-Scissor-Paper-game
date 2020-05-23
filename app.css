@@ -92,6 +92,10 @@ border:20px solid hsl(349, 71%, 52%);
     color: white;
     cursor: help;
 }
+.rules:hover{
+    border: 3px solid grey;
+}
+}
 .rules-heading{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -176,7 +180,12 @@ margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 70px;
+    font-size: 18px;
+    font-weight: 600;
     padding-left: 70px;
     border-radius: 10px;
     cursor:pointer;
+}
+.next-turn:hover{
+    border: 3px solid grey;
 }

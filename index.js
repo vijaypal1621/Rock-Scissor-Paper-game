@@ -1,3 +1,8 @@
+
+
+
+
+
 const rules= document.querySelector(".rules");
 const ruleSection= document.querySelector(".rules-hide");
 const cross=document.querySelector(".close-image")
@@ -32,7 +37,7 @@ function showResult(num){
     houseSum.push(10);
     }
     if (num=== 0){
-        text="Draw";
+        text="It's Draw";
         score=score+3;
         house=house+3;
         userSum.push(3);
@@ -52,7 +57,7 @@ function showResult(num){
         result.firstElementChild.textContent=text;
         scoreNo.textContent=score;
         houseNo.textContent=house;
-    },3000);
+    },1000);
         
   
 
@@ -119,7 +124,7 @@ console.log(selectedDiv);
 choice.classList.add("hide");
 step2.classList.add("visible");
 const selectedDivClass=selectedDiv.getAttribute("class");
-console.log(selectedDivClass);
+
 const selectedDivClassImageURL=selectedDiv.querySelector('img').getAttribute("src");
 
 image1.classList.add(selectedDivClass);
@@ -130,7 +135,7 @@ image1URL.setAttribute("src",selectedDivClassImageURL );
 position2.classList.add("pseudo");
 setTimeout( ()=>{
 position2.classList.remove("pseudo");
-},3000);
+},1000);
 
 
 const n=map[selectedDivClass];
@@ -174,11 +179,12 @@ const next=document.querySelector(".next-turn");
 next.addEventListener("click",()=>{
             // count++;
     
-        const selectedDivClass=step2.querySelector(".position-1");
-        selectedDivClass.className="position-1";
-        console.log(selectedDivClass);
+        const selectedDivClass=step2.querySelector(".position-1"); // these four lines are for to remove the selected classes at the time
+        selectedDivClass.className="position-1";                   // of selection 
         const selectedDivClass2=step2.querySelector(".position-2");
         selectedDivClass2.className="position-2";
+
+
             step2.classList.remove("visible");
             choice.classList.remove("hide");
             result.classList.remove("visible");
