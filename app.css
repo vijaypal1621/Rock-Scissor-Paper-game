@@ -190,7 +190,7 @@ margin-bottom: 20px;
     border: 3px solid grey;
 }
 
-@media (max-width : 412px){
+@media (max-width : 390px){
   
     .main-box{
         width: 100%; 
@@ -201,7 +201,7 @@ margin-bottom: 20px;
     .logo-image{
         margin-right: 0px;
       display: inline-block;
-         right: 12px;
+         right: 5px;
          width: 36%;
       
     }
@@ -231,13 +231,15 @@ margin-bottom: 20px;
     }
     .paper{
         bottom:300px;
-        left: 17px;
+        left: -49px;
     }
     .scissor{
-        bottom: 300px;
+        bottom: 420px;
+        right: -94px;
     }
     .rock{
-        bottom: 117px;
+        bottom: 114px;
+        right: 64px;
     }
     .choosing-images{
         position: relative;
@@ -245,7 +247,7 @@ margin-bottom: 20px;
     }
     .rules{
         width: 20%;
-        right: 163px;
+        right: 145px;
         bottom: 25px;
     }
     .rules-hide{
